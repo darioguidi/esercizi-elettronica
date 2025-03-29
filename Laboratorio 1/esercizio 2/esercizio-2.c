@@ -4,12 +4,12 @@
 
 float equation(int a, int b, int c, int d)
 {
-    for(float i=0;i<1000;i++){
-        if((a*i)+(b*c*i)+(d*K)==0){
-            return i;
-        }
+    int denominatore = a+(b*c);
+    if(denominatore==0){
+        return -1;
     }
-    return -1;
+
+    return (-d * K)/denominatore;
 }
 
 int main(void)
@@ -18,15 +18,17 @@ int main(void)
     float x_equation;
 
     printf("Inserire i valori da sostituire nell'equazione \n");
-    if(scanf("%& %& %& %&", a,b,c,d) != 4){
+    if(scanf("%d%d%d%d", &a,&b,&c,&d) != 4){
         printf("Hai sbagliato ad inserire i valori per l'equazione \n ");
         return 1;
     }
 
-    if(x_equation=equation(a,b,c,d)){
-        printf("Il valore di x nell'equazione sarà: %.2f", x_equation);
+    x_equation=equation(a,b,c,d);
+
+    if(x_equation != -1){
+        printf("Il valore di x nell'equazione sarà: %.2f \n", x_equation);
     }else{
-        printf("L'equazione non ha soluzioni");
+        printf("L'equazione non ha soluzioni \n");
     }
 
     return 0;
