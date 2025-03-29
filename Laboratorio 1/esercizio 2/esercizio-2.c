@@ -18,7 +18,7 @@ int main(void)
     float x_equation;
 
     printf("Inserire i valori da sostituire nell'equazione \n");
-    if(scanf("%d%d%d%d", a,b,c,d) != 4){
+    if(scanf("%& %& %& %&", a,b,c,d) != 4){
         printf("Hai sbagliato ad inserire i valori per l'equazione \n ");
         return 1;
     }
