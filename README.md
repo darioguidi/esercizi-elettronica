@@ -1,2 +1,0 @@
-# esercizi-elettronica
- 
