@@ -19,15 +19,20 @@ int main(void)
         }
     }
 
-    if(lati[1]+lati[2]>lati[3] && lati[1]+lati[3]>lati[2] && lati[3]+lati[2]>lati[1]){
-        printf("Esiste come triangolo \n");
+    if (lati[0] + lati[1] > lati[2] && 
+        lati[0] + lati[2] > lati[1] && 
+        lati[1] + lati[2] > lati[0]) 
+    {
+        printf("Esiste come triangolo.\n");
 
-        if(lati[1]==lati[2] || lati[1]==lati[3] || lati[2]==lati[3]){
-            printf("Il triangolo \x84 isoscele \n");
-        }else if(lati[1]==lati[2] || lati[1]==lati[3]){
-            printf("Il triangolo \x84 equilatero \n");
-        }else{
-            printf("Il triangolo \x84 scaleno \n");
+        if (lati[0] == lati[1] && lati[1] == lati[2]) {
+            printf("Il triangolo \x8A equilatero.\n");
+        } else if (lati[0] == lati[1] || lati[0] == lati[2] || lati[1] == lati[2]) {
+            printf("Il triangolo \x8A isoscele.\n");
+        } else {
+            printf("Il triangolo \x8A scaleno.\n");
         }
+    } else {
+        printf("I lati inseriti non formano un triangolo.\n");
     }
 }
