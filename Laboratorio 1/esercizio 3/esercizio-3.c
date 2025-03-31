@@ -18,7 +18,7 @@ int main(void)
     months = (years*12)*MESE;
     features = features*CUSTOM;
 
-    price=months+features;
+    price=months+features+PREZZO_BASE;
     if(price>100){
         printf("Il prezzo del telefono sarà di %d", price);
     }else{
