@@ -31,4 +31,8 @@ int main(void)
         }
     }
 
+    int max_diff;
+    max_diff=max-min;
+    prinf("La massima differenza è di: %d", max_diff);
+
 }
