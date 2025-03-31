@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/dario/dario/Polito/Elettronica/esercizi-elettronica/Laboratorio 1/esercizio 5",
-      "program": "c:/Users/dario/dario/Polito/Elettronica/esercizi-elettronica/Laboratorio 1/esercizio 5/build/Debug/outDebug",
+      "cwd": "c:/Users/dario/dario/Polito/Elettronica/esercizi-elettronica/Laboratorio 1/esercizio 6",
+      "program": "c:/Users/dario/dario/Polito/Elettronica/esercizi-elettronica/Laboratorio 1/esercizio 6/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
