@@ -4,19 +4,31 @@ int main(void)
 {
     int num[4];
 
-    printF("Inserisci 4 numeri interi \n");
+    printf("Inserisci 4 numeri interi \n");
 
     for(int i=0; i<4;i++){
+        int temp;
         printf("Inserisci: ");
-        if(num[i]<1000){
-            scanf("%d", num[i]);
+        scanf("%d", &temp);
+        if(temp<1000 && temp>=0){
+            num[i]=temp;
         }else{
-            printf("Numero troppo grande, riporvare \n");
+            printf("Numero troppo grande, valore assegnato 'zero'\n");
+            num[i]=0;
             i--;
         }
     }
 
+    int max = num[0];
+    int min = num[0];
 
-
+    for (int i = 1; i < 4; i++) { 
+        if (num[i] > max) {
+            max = num[i];
+        }
+        if (num[i] < min) {
+            min = num[i];
+        }
+    }
 
 }
