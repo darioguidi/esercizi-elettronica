@@ -33,6 +33,8 @@ int main(void)
 
     int max_diff;
     max_diff=max-min;
-    prinf("La massima differenza è di: %d", max_diff);
+    printf("La massima differenza \x8A di: %d \n", max_diff);
+
+    return 0;
 
 }
