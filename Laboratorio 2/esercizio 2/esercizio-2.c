@@ -4,7 +4,7 @@ int main(void)
 {
     int vett[5];
     float media;
-    int min, position;
+    int min,max, position;
 
     size_t vett_length = sizeof(vett) / sizeof(vett[0]); //grandezza vettore / grandezza un intero 40 byte
 
@@ -15,6 +15,7 @@ int main(void)
 
 
     min = vett[0];
+    max = vett[0];
     position = 0;
 
     for(size_t i=0; i<vett_length; i++){
@@ -23,6 +24,8 @@ int main(void)
         if(vett[i]<min){
             min=vett[i];
             position=i;
+        }else if(vett[i]>max){
+            max=vett[i];
         }
 
         printf("%d \n", vett[i]);       
@@ -32,6 +35,7 @@ int main(void)
 
     printf("\nLa media sara di %.2f", media);
     printf("\nIl valore minimo è %d in posizione %d\n", min, position);
+    printf("\nIl valore massimo è %d \n", max);
 
     return 0;
 }
