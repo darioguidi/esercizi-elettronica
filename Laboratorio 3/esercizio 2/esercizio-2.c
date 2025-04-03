@@ -4,6 +4,7 @@
 
 #define LUNGHEZZA_SEQUENZA 20
 
+
 void generare_sequenza_DNA(char sequenza[], int len)
 {
     char basi[] = {'A','G','C','T'};
@@ -15,11 +16,11 @@ void generare_sequenza_DNA(char sequenza[], int len)
 }
 
 
-
 int found_sequence()
 {
 
 }
+
 
 int main(void)
 {
